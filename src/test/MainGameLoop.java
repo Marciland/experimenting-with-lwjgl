@@ -10,6 +10,7 @@ public class MainGameLoop {
 	static Game game;
 	static Launcher launcher;
 
+	
 	//database root password: !7gTu_t.hRJtDWF
 
 	public static void main(String[] args) {
