@@ -1,0 +1,31 @@
+2019-05-15T13:40:07.112323Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2019-05-15T13:40:07.115585Z 0 [System] [MY-010116] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.16) starting as process 10940
+2019-05-15T13:40:08.804608Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-05-15T13:40:08.841005Z 0 [System] [MY-010931] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: ready for connections. Version: '8.0.16'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2019-05-15T13:40:09.075761Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2019-05-20T07:09:58.544814Z 0 [System] [MY-013105] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Normal shutdown.
+2019-05-20T07:09:59.692253Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.16)  MySQL Community Server - GPL.
+2019-05-20T07:10:16.409345Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2019-05-20T07:10:16.416700Z 0 [System] [MY-010116] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.16) starting as process 5608
+2019-05-20T07:10:20.037466Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-05-20T07:10:20.044423Z 0 [ERROR] [MY-010262] [Server] Can't start server: Bind on TCP/IP port: Die angeforderte Adresse ist in diesem Kontext ungültig.
+
+2019-05-20T07:10:20.044431Z 0 [ERROR] [MY-010257] [Server] Do you already have another mysqld server running on port: 3306 ?
+2019-05-20T07:10:20.048909Z 0 [ERROR] [MY-010119] [Server] Aborting
+2019-05-20T07:10:21.369899Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.16)  MySQL Community Server - GPL.
+2019-05-20T09:11:29.866581Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2019-05-20T09:11:29.868413Z 0 [System] [MY-010116] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.16) starting as process 280
+2019-05-20T09:11:31.431595Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-05-20T09:11:31.432233Z 0 [ERROR] [MY-010262] [Server] Can't start server: Bind on TCP/IP port: Die angeforderte Adresse ist in diesem Kontext ungültig.
+
+2019-05-20T09:11:31.432240Z 0 [ERROR] [MY-010257] [Server] Do you already have another mysqld server running on port: 3306 ?
+2019-05-20T09:11:31.435550Z 0 [ERROR] [MY-010119] [Server] Aborting
+2019-05-20T09:11:32.967710Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.16)  MySQL Community Server - GPL.
+2019-05-21T22:00:24.753812Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2019-05-21T22:00:24.758613Z 0 [System] [MY-010116] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.16) starting as process 5944
+2019-05-21T22:00:28.400950Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-05-21T22:00:28.406389Z 0 [ERROR] [MY-010262] [Server] Can't start server: Bind on TCP/IP port: Die angeforderte Adresse ist in diesem Kontext ungültig.
+
+2019-05-21T22:00:28.406397Z 0 [ERROR] [MY-010257] [Server] Do you already have another mysqld server running on port: 3306 ?
+2019-05-21T22:00:28.409758Z 0 [ERROR] [MY-010119] [Server] Aborting
+2019-05-21T22:00:29.961237Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.16)  MySQL Community Server - GPL.

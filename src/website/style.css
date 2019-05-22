@@ -1,0 +1,33 @@
+﻿html{
+	text-align: center;
+    border-style: double;
+}
+body{
+	background:black;
+    max-width: 90%;
+        margin: 0 auto;
+}
+h1{
+	font-size: 30pt;
+	font-family: Clarendon, sans-serif;
+	color: red;
+	text-align: center;
+}
+button{
+	border-bottom-style: double;
+    border-bottom-color: silver;
+	margin-top: 500px;
+	padding: 10px 30px;
+	color: rgba(250,250,250);
+	background-color: rgba(250,0,0,1);
+	box-shadow: 0px 17px 10px -7px rgba(250,0,0,0.4);
+	font-family: Clarendon, sans-serif;
+	transition: ease-in-out all 300ms;
+}
+button:hover {
+	color: red;
+	background-color: black;
+	transform: translate(0px, -10px);
+	box-shadow: 0px 30px 15px -10px 
+	rgba (250,0,0,0.2);
+}
