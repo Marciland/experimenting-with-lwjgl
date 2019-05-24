@@ -22,20 +22,10 @@ public class MySQL {
 	public void connect(String databaseName) throws SQLException {
 		database = databaseName;
 		con = DriverManager.getConnection("jdbc:mysql://" + host + ":" + port + "/" + database + timezone, username, password);
-		if(con != null) {
-			System.out.println("Successfully connected to " + database + "!");
-		}else {
-			System.out.println("Failed to connect to " + database + "!");
-		}
 		stmt = con.createStatement();
-		if(stmt != null) {
-			System.out.println("Successfully created statement!");
-		}else {
-			System.out.println("Failed to create statement!");
-		}
 	}
 
-	
+
 	//executeQuery only works with SELECT
 	public void executeQuery(String query) throws SQLException {
 		rs = stmt.executeQuery(query);
@@ -60,7 +50,6 @@ public class MySQL {
 			}
 			if(con != null) {
 				con.close();
-				System.out.println("Disconnected from " + database + "-database!");
 			}
 		} catch (Exception ignored) {
 

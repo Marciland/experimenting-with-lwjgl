@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 import utilities.Tools;
 
 public class Menu {
-	
+
 	private JPanel menuPanel = new JPanel();
 	private JButton settingsButton = new JButton();
 	private JButton exitButton = new JButton();
@@ -43,7 +43,7 @@ public class Menu {
 
 		settingsListener = new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
-				
+
 			}
 		};
 
@@ -54,7 +54,7 @@ public class Menu {
 		menuPanel.add(exitButton);	
 	}
 
-	public JPanel getMenu() {
+	protected JPanel getMenu() {
 		return menuPanel;
 	}
 }

@@ -13,7 +13,7 @@ public class News {
 		newsPanel.setBackground(Color.GREEN);
 	}
 
-	public JPanel getNews() {
+	protected JPanel getNews() {
 		return newsPanel;
 	}
 }

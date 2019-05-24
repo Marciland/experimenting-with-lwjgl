@@ -9,15 +9,15 @@ import test.MainGameLoop;
 public class Launcher {
 
 	private Window window;
-	protected static MySQL sql = new MySQL();
+	private static MySQL sql = new MySQL();
 	protected static ArrayList<String> usernames = new ArrayList<String>();
 	protected static ArrayList<String> emails = new ArrayList<String>();
 	protected static ArrayList<String> passwords = new ArrayList<String>();
 	protected final String title =  "This is u - Launcher v" + MainGameLoop.version;
 	public boolean startGame = false;
-	
+
 	public Launcher() {
-		
+
 		try {
 			getUsers();
 		} catch (SQLException ignored) {}
@@ -42,7 +42,6 @@ public class Launcher {
 			passwords.add(rs.getString("password"));
 			emails.add(rs.getString("email"));
 		}
-		System.out.println("Successfully loaded users data!");
 		sql.disconnect();
 	}
 

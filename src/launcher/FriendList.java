@@ -13,7 +13,7 @@ public class FriendList {
 //		friendListPanel.setBounds(x, y, w, h);
 	}
 
-	public JPanel getFriendList() {
+	protected JPanel getFriendList() {
 		return friendListPanel;
 	}
 }

@@ -56,14 +56,9 @@ public class Window extends JFrame{
 		serverListPanel = serverList.getServerList();
 		getContentPane().add(serverListPanel);
 		setVisible(true);
-		if(isShowing()) {
-			System.out.println("Successfully created window!");	
-		}else {
-			System.out.println("Failed to create window!");				
-		}
 	}
 
-	public void login() {
+	protected void login() {
 		System.out.println("Successfully logged in");
 		getContentPane().remove(loginPanel);
 		getContentPane().remove(serverListPanel);
