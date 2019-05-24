@@ -14,7 +14,7 @@ public class Launcher {
 	protected static ArrayList<String> emails = new ArrayList<String>();
 	protected static ArrayList<String> passwords = new ArrayList<String>();
 	protected final String title =  "This is u - Launcher v" + MainGameLoop.version;
-	public boolean startGame = false;
+	private boolean startGame = false;
 
 	public Launcher() {
 
@@ -22,11 +22,9 @@ public class Launcher {
 			getUsers();
 		} catch (SQLException ignored) {}
 		window = new Window(title);
-		while(!Login.success) {
-			System.out.println(Login.success);
-			try {
-				Thread.sleep(10000);
-			} catch (InterruptedException ignored) {}
+		while(!Login.getSuccess()) {
+			//update serverList status?
+			//update news/events
 		}
 		window.login();
 	}
@@ -42,7 +40,7 @@ public class Launcher {
 			passwords.add(rs.getString("password"));
 			emails.add(rs.getString("email"));
 		}
-		sql.disconnect();
+		MySQL.disconnect();
 	}
 
 	protected static int newUser(String username, String email) {
@@ -68,5 +66,9 @@ public class Launcher {
 
 	public void close() {
 		window.dispose();
+	}
+
+	public boolean getStartGame() {
+		return startGame;
 	}
 }

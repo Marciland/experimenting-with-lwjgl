@@ -6,7 +6,6 @@ import java.sql.SQLException;
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
 import javax.swing.JPanel;
-
 import database.MySQL;
 
 public class ServerList {
@@ -36,7 +35,7 @@ public class ServerList {
 		while(rs.next()) {
 			model.addElement(new Server(rs.getInt("serverID"), rs.getString("name"), rs.getInt("playerAmount")));
 		}
-		sql.disconnect();
+		MySQL.disconnect();
 	}
 
 	protected JPanel getServerList() {

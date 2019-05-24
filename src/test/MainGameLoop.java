@@ -16,12 +16,11 @@ public class MainGameLoop {
 
 		launcher = new Launcher();
 
-		while(!launcher.startGame) {
-			System.out.println(launcher.startGame);
-			try {
-				Thread.sleep(20000);
-			} catch (InterruptedException ignored) {}
+		while(!launcher.getStartGame()) {
+			//update news/events
 		}
+		
+		launcher.close();
 
 		game = new Game();
 

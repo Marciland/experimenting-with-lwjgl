@@ -32,7 +32,7 @@ public class Login {
 	private JButton forgotUsernameButton = new JButton();
 	private JButton forgotPasswordButton = new JButton();
 	private ActionListener newUserListener, loginListener, forgotUsernameListener, forgotPasswordListener;
-	protected static boolean success = false;
+	private static boolean success = false;
 
 	public Login(int width, int height) {
 
@@ -227,5 +227,9 @@ public class Login {
 
 	public JPanel getLogin() {
 		return loginPanel;
+	}
+
+	public static boolean getSuccess() {
+		return success;
 	}
 }

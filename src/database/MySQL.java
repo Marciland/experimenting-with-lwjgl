@@ -15,9 +15,9 @@ public class MySQL {
 	private String password = "password";
 	private final String timezone = "?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Europe/Berlin";
 
-	public Connection con = null;
-	public Statement stmt = null;
-	public ResultSet rs = null;
+	private static Connection con = null;
+	private static Statement stmt = null;
+	private static ResultSet rs = null;
 
 	public void connect(String databaseName) throws SQLException {
 		database = databaseName;
@@ -40,7 +40,7 @@ public class MySQL {
 		return rs;
 	}
 
-	public void disconnect() {
+	public static void disconnect() {
 		try {
 			if(rs != null) {
 				rs.close();	
@@ -51,8 +51,6 @@ public class MySQL {
 			if(con != null) {
 				con.close();
 			}
-		} catch (Exception ignored) {
-
-		}
+		} catch (Exception ignored) {}
 	}
 }

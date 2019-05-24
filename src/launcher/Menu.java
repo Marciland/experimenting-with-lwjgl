@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import database.MySQL;
 import utilities.Tools;
 
 public class Menu {
@@ -34,9 +35,8 @@ public class Menu {
 
 		exitListener = new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
 				//ask if you really want to quit
-
+				MySQL.disconnect();
 				System.exit(0);
 			}
 		};
