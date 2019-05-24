@@ -43,19 +43,19 @@ public class Login {
 		usernameLabel.setBounds(0, 0,  loginPanel.getWidth()/5, (int) (loginPanel.getHeight()/2.5));
 		usernameLabel.setText("  Username:");
 		usernameLabel.setForeground(Color.RED);
-		usernameLabel.setFont(Tools.setPlainFont((int) (20*Window.scaling)));
+		usernameLabel.setFont(Tools.setCalibriFont((int) (Window.fontSize*Window.scaling)));
 
 		usernameText.setBounds(loginPanel.getWidth()/5, (int) (loginPanel.getHeight()/2.5/4), loginPanel.getWidth()/5*3, (int) (loginPanel.getHeight()/2.5/4*2));
-		usernameText.setFont(Tools.setPlainFont((int) (20*Window.scaling)));
+		usernameText.setFont(Tools.setCalibriFont((int) (Window.fontSize*Window.scaling)));
 		usernameText.setBorder(null);
 
 		passwordLabel.setBounds(0, (int) (loginPanel.getHeight()/2.5), loginPanel.getWidth()/5, (int) (loginPanel.getHeight()/2.5));
 		passwordLabel.setText("  Password:");
 		passwordLabel.setForeground(Color.RED);
-		passwordLabel.setFont(Tools.setPlainFont((int) (20*Window.scaling)));
+		passwordLabel.setFont(Tools.setCalibriFont((int) (Window.fontSize*Window.scaling)));
 
 		passwordText.setBounds(loginPanel.getWidth()/5, (int) (loginPanel.getHeight()/2.5 + loginPanel.getHeight()/2.5/4), loginPanel.getWidth()/5*3, (int) (loginPanel.getHeight()/2.5/4*2));
-		passwordText.setFont(Tools.setPlainFont((int) (20*Window.scaling)));
+		passwordText.setFont(Tools.setCalibriFont((int) (Window.fontSize*Window.scaling)));
 		passwordText.setBorder(null);
 
 		loginButton.setBounds(loginPanel.getWidth()/20, (int) (loginPanel.getHeight()/2.5*2), loginPanel.getWidth()/5*2, loginPanel.getHeight()/5);
@@ -72,14 +72,14 @@ public class Login {
 		forgotUsernameButton.setBorderPainted(false);
 		forgotUsernameButton.setBackground(loginPanel.getBackground());
 		forgotUsernameButton.setForeground(Color.RED);
-		forgotUsernameButton.setFont(Tools.setPlainFont((int) (20*Window.scaling)));
+		forgotUsernameButton.setFont(Tools.setCalibriFont((int) (Window.fontSize*Window.scaling)));
 		forgotUsernameButton.setText("<html>forgot<br>username?</html>");
 
 		forgotPasswordButton.setBounds(loginPanel.getWidth()/5*4, (int) (loginPanel.getHeight()/2.5), loginPanel.getWidth()/5, (int) (loginPanel.getHeight()/2.5));
 		forgotPasswordButton.setBorderPainted(false);
 		forgotPasswordButton.setBackground(loginPanel.getBackground());
 		forgotPasswordButton.setForeground(Color.RED);
-		forgotPasswordButton.setFont(Tools.setPlainFont((int) (20*Window.scaling)));
+		forgotPasswordButton.setFont(Tools.setCalibriFont((int) (Window.fontSize*Window.scaling)));
 		forgotPasswordButton.setText("<html>forgot<br>password?</html>");
 
 		loginListener = new ActionListener() {

@@ -34,10 +34,9 @@ public class Menu {
 
 		exitListener = new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+
 				//ask if you really want to quit
-				
-				Launcher.sql.disconnect();
+
 				System.exit(0);
 			}
 		};

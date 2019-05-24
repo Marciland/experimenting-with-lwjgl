@@ -13,8 +13,8 @@ public class Tools {
 		return imageIcon;
 	}
 
-	public static Font setPlainFont(int x) {
-		Font font =  new Font("Arial", Font.PLAIN, x);
+	public static Font setCalibriFont(int x) {
+		Font font =  new Font("Calibri Light", Font.PLAIN, x);
 		return font;
 	}
 }

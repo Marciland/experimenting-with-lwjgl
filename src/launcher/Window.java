@@ -13,6 +13,7 @@ public class Window extends JFrame{
 	private Dimension screenSize;
 	protected int width, height;
 	protected final static double scaling = 0.7; //smaller number = smaller window; 1 = fullscreen
+	protected final static double fontSize = 23;
 	private Login login;
 	private Menu menu;
 	private News news;
