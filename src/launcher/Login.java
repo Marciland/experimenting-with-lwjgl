@@ -171,6 +171,7 @@ public class Login {
 									try {
 										sql.executeUpdate("INSERT INTO login.users (username, password, email) VALUES ('" + usernameText.getText() + "', '" + passwordText1.getText() + "', '" + emailText.getText() + "');");
 									} catch (SQLException ignored) {}
+									//dispose & JOptionPane
 								}
 							}else {JOptionPane.showMessageDialog(null, "Please fill in all fields!", "Error", JOptionPane.ERROR_MESSAGE);
 							}

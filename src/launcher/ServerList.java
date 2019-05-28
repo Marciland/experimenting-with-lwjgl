@@ -12,29 +12,33 @@ public class ServerList {
 
 	private MySQL sql = new MySQL();
 	private JPanel serverListPanel = new JPanel();
-	private JList<Server> serverList = new JList<Server>();
-	private DefaultListModel<Server> model = new DefaultListModel<Server>();
+	private JList<String> serverList = new JList<String>();
+	private DefaultListModel<String> serverListModel = new DefaultListModel<String>();
 
 	public ServerList(int width, int height) {
 		serverListPanel.setLayout(null);
 		serverListPanel.setBounds(width/16*11, height/18, width/16*5, height/9*6);
 		serverListPanel.setBackground(Color.BLUE);
 
-		serverList.setModel(model);
 		try {
 			loadServerData();
 		} catch (SQLException ignored) {}
-		serverList.setBounds(0, 0, 100, 100);
+
+		serverList.setBounds(0, serverListPanel.getHeight()/5*1, serverListPanel.getWidth(), serverListPanel.getHeight()/5*4);
+		serverList.setModel(serverListModel);
+
 		serverListPanel.add(serverList);
 	}
 
 	private void loadServerData() throws SQLException {
 		sql.connect("login");
-		sql.executeQuery("SELECT serverID, name, playerAmount FROM server;");
+		sql.executeQuery("SELECT name FROM server;");
 		ResultSet rs = sql.getResultSet();
+		serverListModel.clear();
 		while(rs.next()) {
-			model.addElement(new Server(rs.getInt("serverID"), rs.getString("name"), rs.getInt("playerAmount")));
+			serverListModel.addElement(rs.getString("name"));
 		}
+		rs.close();
 		MySQL.disconnect();
 	}
 

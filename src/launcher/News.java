@@ -10,7 +10,7 @@ public class News {
 	public News(int width, int height) {
 		newsPanel.setLayout(null);
 		newsPanel.setBounds(0, height/18, width/16*11, height-height/18);
-		newsPanel.setBackground(Color.GREEN);
+		newsPanel.setBackground(Color.RED);
 	}
 
 	protected JPanel getNews() {

@@ -23,6 +23,7 @@ public class Launcher {
 		} catch (SQLException ignored) {}
 		window = new Window(title);
 		while(!Login.getSuccess()) {
+			System.out.println(Login.getSuccess());
 			//update serverList status?
 			//update news/events
 		}
@@ -40,6 +41,7 @@ public class Launcher {
 			passwords.add(rs.getString("password"));
 			emails.add(rs.getString("email"));
 		}
+		rs.close();
 		MySQL.disconnect();
 	}
 

@@ -14,13 +14,13 @@ public class MainGameLoop {
 
 	public static void main(String[] args) {
 
-		launcher = new Launcher();
-
-		while(!launcher.getStartGame()) {
-			//update news/events
-		}
-		
-		launcher.close();
+//		launcher = new Launcher();
+//
+//		while(!launcher.getStartGame()) {
+//			System.out.println(launcher.getStartGame());
+//		}
+//		
+//		launcher.close();
 
 		game = new Game();
 
