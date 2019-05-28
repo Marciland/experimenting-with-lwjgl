@@ -22,7 +22,9 @@ public class ServerList {
 
 		try {
 			loadServerData();
-		} catch (SQLException ignored) {}
+		} catch (SQLException ignored) {
+			System.out.println(ignored);
+		}
 
 		serverList.setBounds(0, serverListPanel.getHeight()/5*1, serverListPanel.getWidth(), serverListPanel.getHeight()/5*4);
 		serverList.setModel(serverListModel);

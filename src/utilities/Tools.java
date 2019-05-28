@@ -13,7 +13,7 @@ public class Tools {
 		return imageIcon;
 	}
 
-	public static Font setCalibriFont(int x) {
+	public static Font getCalibriFont(int x) {
 		Font font =  new Font("Calibri Light", Font.PLAIN, x);
 		return font;
 	}

@@ -51,6 +51,8 @@ public class MySQL {
 			if(con != null) {
 				con.close();
 			}
-		} catch (Exception ignored) {}
+		} catch (Exception ignored) {
+			System.out.println(ignored);
+		}
 	}
 }

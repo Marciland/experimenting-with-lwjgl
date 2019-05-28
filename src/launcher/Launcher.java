@@ -20,7 +20,9 @@ public class Launcher {
 
 		try {
 			getUsers();
-		} catch (SQLException ignored) {}
+		} catch (SQLException ignored) {
+			System.out.println(ignored);
+		}
 		window = new Window(title);
 		while(!Login.getSuccess()) {
 			System.out.println(Login.getSuccess());
@@ -49,7 +51,9 @@ public class Launcher {
 		int result = 0;
 		try {
 			getUsers();
-		} catch (SQLException ignored) {}
+		} catch (SQLException ignored) {
+			System.out.println(ignored);
+		}
 
 		if(usernames.contains(username) || emails.contains(email)) {
 			if(usernames.contains(username)) {

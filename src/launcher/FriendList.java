@@ -10,7 +10,7 @@ public class FriendList {
 	public FriendList(int width, int height) {
 		friendListPanel.setLayout(null);
 		friendListPanel.setBackground(Color.YELLOW);
-//		friendListPanel.setBounds(x, y, w, h);
+		//		friendListPanel.setBounds(x, y, w, h);
 	}
 
 	protected JPanel getFriendList() {
