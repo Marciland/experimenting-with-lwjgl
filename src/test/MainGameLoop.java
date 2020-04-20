@@ -6,7 +6,7 @@ import launcher.Launcher;
 
 public class MainGameLoop {
 
-	public final static String version = "0.1"; 
+	public final static String version = "ALPHA - 1"; 
 	private static Game game;
 	private static Launcher launcher;
 
@@ -14,13 +14,13 @@ public class MainGameLoop {
 
 	public static void main(String[] args) {
 
-		//		launcher = new Launcher();
-		//
-		//		while(!launcher.getStartGame()) {
-		//			System.out.println(launcher.getStartGame());
-		//		}
-		//		
-		//		launcher.close();
+		launcher = new Launcher();
+
+		while(!launcher.getStartGame()) {
+			System.out.println(launcher.getStartGame());
+		}
+
+		launcher.close();
 
 		//		game = new Game();
 		//

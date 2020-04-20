@@ -13,7 +13,7 @@ public class Launcher {
 	protected static ArrayList<String> usernames = new ArrayList<String>();
 	protected static ArrayList<String> emails = new ArrayList<String>();
 	protected static ArrayList<String> passwords = new ArrayList<String>();
-	protected final String title =  "This is u - Launcher v" + MainGameLoop.version;
+	protected final String title =  "This is u - Launcher v. " + MainGameLoop.version;
 	private boolean startGame = false;
 
 	public Launcher() {

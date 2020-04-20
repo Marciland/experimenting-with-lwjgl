@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import database.MySQL;
 import utilities.Tools;
@@ -35,15 +36,17 @@ public class Menu {
 
 		exitListener = new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//ask if you really want to quit
-				MySQL.disconnect();
-				System.exit(0);
+				int result = JOptionPane.showConfirmDialog(null, "Willst du den Launcher beenden?", "Beenden?", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE);
+				if(result == 0) {
+					MySQL.disconnect();
+					System.exit(0);
+				}
 			}
 		};
 
 		settingsListener = new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
-
+				
 			}
 		};
 
