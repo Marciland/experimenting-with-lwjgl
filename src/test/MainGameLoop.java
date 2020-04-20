@@ -6,8 +6,7 @@ import launcher.Launcher;
 
 public class MainGameLoop {
 
-	public final static String version = "0.1";
-	private static Settings settings;
+	public final static String version = "0.1"; 
 	private static Game game;
 	private static Launcher launcher;
 
@@ -15,7 +14,6 @@ public class MainGameLoop {
 
 	public static void main(String[] args) {
 
-		settings = new Settings();
 		//		launcher = new Launcher();
 		//
 		//		while(!launcher.getStartGame()) {

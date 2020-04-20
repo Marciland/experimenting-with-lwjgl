@@ -15,8 +15,8 @@ public class Game {
 	public long window;
 
 	public Game() {
-		WIDTH = ;
-		HEIGHT = ;
+		WIDTH = 1;
+		HEIGHT = 1;
 		if(!glfwInit()) {
 			System.out.println("Failed to initialize GLFW!");
 		}	
