@@ -46,7 +46,7 @@ public class Menu {
 
 		settingsListener = new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
-				
+				new Settings();
 			}
 		};
 

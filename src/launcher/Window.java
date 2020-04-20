@@ -9,7 +9,7 @@ import input.FrameDragListener;
 
 public class Window extends JFrame{
 
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = -4590430443722390436L;
 	private Dimension screenSize;
 	protected int width, height;
 	protected final static double scaling = 0.7; //smaller number = smaller window; 1 = fullscreen
